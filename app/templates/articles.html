@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block content %}
+
+
+<div class="container">
+    <h2> Latest Articles</h2>
+    <hr>
+    <div class="row">
+
+        {% for article in news %}
+        <div class="col-md-3">
+            <div class="">
+                <div class="details">
+                    <a>
+                        <img src="{{article.image}}" class="img-responsive" styles="height:20px">
+                    </a>
+
+                    <h3>{{article.description | truncate(80)}}</h3>
+                    <a href="{{article.url}}" target="_blank"> Read Full article </a>
+                    <p>Posted on : {{article.publishedAt}}</p>
+                </div>
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
