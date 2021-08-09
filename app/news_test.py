@@ -7,19 +7,19 @@ class NewsTest(unittest.TestCase):
         Test class to test the behavior of the news source class
         '''
 
-        def setUp(self):
+def setUp(self):
             '''
             Set up method that will run before every Test
             '''
             self.new_source = News('Al Jazeera English', 'http://www.aljazeera.com', 'News, analysis from the Middle East and worldwide', 'usa',
                                         'general', 'al-jazeera-english')
 
-        def test_instance(self):
+def test_instance(self):
             '''
             '''
             self.assertTrue(isinstance(self.new_source, News))
 
-        def test_to_check_instance_variables(self):
+def test_to_check_instance_variables(self):
             '''
             '''
             self.assertEquals(self.new_source.name, 'Al Jazeera English')
