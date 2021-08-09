@@ -1,0 +1,158 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container">
+
+    <!--<div class="row">-->
+
+
+
+
+    <div class="row">
+        <div class="row header">
+            <div class="col-md-2">
+                <h2>General</h2>
+
+            </div>
+            <div class="col-md-10">
+                <div class="grid_container">
+                    <div class="row">
+
+                        {% for all_news in general %}
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <div class="details">
+                                    <h3>{{all_news.name}}</h3>
+                                    <p>{{all_news.description | truncate(60)}}</p>
+                                    <p><a href="/articles/{{ all_news.id}}">View {{all_news.name}} Articles</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- end of general row -->
+        <hr>
+
+        <div class="row header">
+            <div class="col-md-2">
+                <h2>Tech</h2>
+            </div>
+            <div class="col-md-10">
+                <div class="grid_container">
+
+                    <div class="row">
+                        {% for all_news in technology %}
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <div class="details">
+                                    <h3>{{all_news.name}}</h3>
+                                    <p>{{all_news.description | truncate(60)}}</p>
+                                    <p><a href="/articles/{{ all_news.id}}">View {{all_news.name}} Articles</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- end of technology -->
+        <hr>
+
+
+        <div class="row header">
+            <div class="col-md-2">
+                <h2>Business</h2>
+            </div>
+            <div class="col-md-10">
+                <div class="grid_container">
+
+                    <div class="row">
+
+                        {% for all_news in business %}
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <div class="details">
+                                    <h3>{{all_news.name}}</h3>
+                                    <p>{{all_news.description | truncate(60)}}</p>
+                                    <p><a href="/articles/{{ all_news.id}}">View {{all_news.name}} Articles</a></p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end of business news row -->
+        <hr>
+
+        <div class="row header">
+            <div class="col-md-2">
+                <h2>Fun</h2>
+            </div>
+            <div class="col-md-10">
+                <div class="grid_container">
+                    <div class="row">
+                        {% for all_news in entertainment %}
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <div class="details">
+                                    <h3>{{all_news.name}}</h3>
+                                    <p>{{all_news.description | truncate(60)}}</p>
+                                    <p><a href="/articles/{{ all_news.id}}">View {{all_news.name}} Articles</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end of fun -->
+        <hr>
+
+
+        <div class="row header">
+            <div class="col-md-2">
+                <h2>Sports</h2>
+            </div>
+            <div class="col-md-10">
+                <div class="grid_container">
+                    <div class="row">
+                        {% for all_news in sports %}
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <div class="details">
+                                    <h3>{{all_news.name}}</h3>
+                                    <p>{{all_news.description | truncate(60)}}</p>
+                                    <p><a href="/articles/{{ all_news.id}}">View {{all_news.name}} Articles</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end of sports -->
+
+
+    </div>
+
+
+    {% endblock %}
+    <!-- end of second row -->
+
+</div>
