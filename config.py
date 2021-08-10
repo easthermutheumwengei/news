@@ -9,7 +9,7 @@ class Config:
     NEWS_API_KEY=os.environ.get('NEWS_API_KEY')
 
 
-class ProdConfig(Config)
+class ProdConfig(Config):
     '''
     Production  configuration child class
 
