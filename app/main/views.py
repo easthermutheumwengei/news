@@ -8,7 +8,7 @@ def index():
     '''
     view root page that returns the index page and its data
     '''
-    title = "Home - The World On Your Lap"
+    title = "Home|newsrun"
     all_news = get_news('sports')
     general_news = get_news('general')
     tech_news = get_news('technology')

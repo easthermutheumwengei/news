@@ -1,0 +1,32 @@
+h2 {
+    font-family: 'Playfair Display SC', serif;
+    color: #3bc528;
+    padding-top: 30px;
+    text-decoration: dotted;
+}
+
+.row {
+    font-family: 'Slabo 27px', serif;
+}
+
+.thumbnail {
+    padding: 5px;
+    height: 150px;
+    background-color: rgba(238, 241, 241, 0.973);
+    border: none;
+}
+
+.thumbnail h3 {
+    color: #e6bc34;
+    ;
+}
+
+.header {
+    height: 400px;
+    overflow-y: hidden;
+    padding: 5px;
+}
+
+.navbar-brand {
+    background-color: #e6bc34;
+}
